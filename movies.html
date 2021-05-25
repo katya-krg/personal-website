@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Katya</title>
+        <link rel="stylesheet" href="movies.css" />
+    </head>
+  
+    <body>
+        <div id="root-container">
+            <!-- this is the header and navigation list. this sits at the top of the page; currently, the 'movies' page is active and therefore is the only one without a link-->
+            <div id="header-container">
+                <div>
+                    <p id="name">Katya</p>
+                </div>
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a class="active">movies</a></li>
+                    <li><a href="gallery.html">gallery</a></li>
+                </ul>
+            </div>
+
+            <div class="general-container">
+                <h1>This is a short list of some of my favourite movies.</h1>
+                <h4>Click on any movie poster to read its summary.</h4>
+
+            </div>
+
+            <!-- within the wrapper are 3 movie posters-->
+            <div class="wrapper">
+                <!-- when you click on the image, a modal opens up;; basically redirects you to a page with the modal open -->
+                <div><a href="#open-modal"</a><img src="in_bruges.jpg" class="movie-poster" /></div>
+
+                <!-- this creates the modal;; each modal is labelled 0-8 in order for them to all have unique movie summaries and titles -->
+                <div id="open-modal" class="modal-window">
+                    <div>
+                        <!-- to close modal-->
+                        <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                        <!-- text inside modal// title and movie summary-->
+                        <h1>In Bruges</h1>
+                        <div class="movie-summary">
+                            After a particularly difficult job, hit men Ray (Colin Farrell) and Ken (Brendan Gleeson) head to Belgium to hide out until
+                            things cool down. Ray hates the medieval city they land in, but Ken finds its beauty and peacefulness enchanting. Their experiences become increasingly surreal
+                            and possibly life-changing as they encounter tourists, locals, an American dwarf and a potential romance for Ray.
+                        </div>
+                    </div>
+                </div>
+
+                <div><a href="#open-modal1"</a><img src="leon.png" class="movie-poster" /></div>
+
+                <div id="open-modal1" class="modal-window">
+                    <div>
+                        <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                        <h1>Leon: The Professional</h1>
+                        <div class="movie-summary">
+                            Mathilda (Natalie Portman) is only 12 years old, but is already familiar with the dark side of life: her abusive father stores drugs
+                            for corrupt police officers, and her mother neglects her. Léon (Jean Reno), who lives down the hall, tends to his houseplants and works as a hired hitman for mobster Tony
+                            (Danny Aiello). When her family is murdered by crooked DEA agent Stansfield (Gary Oldman), Mathilda joins forces with a reluctant Léon to learn his deadly trade and avenge
+                            her family's deaths.
+                        </div>
+                    </div>
+                </div>
+
+                <div><a href="#open-modal2"</a><img src="black_swan.jpg" class="movie-poster" /></div>
+
+                <div id="open-modal2" class="modal-window">
+                    <div>
+                        <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                        <h1>Black Swan</h1>
+                        <div class="movie-summary">
+                            Nina (Natalie Portman) is a ballerina whose passion for the dance rules every facet of her life. When the company's artistic
+                            director decides to replace his prima ballerina for their opening production of "Swan Lake," Nina is his first choice. She has competition in newcomer Lily
+                            (Mila Kunis) however. While Nina is perfect for the role of the White Swan, Lily personifies the Black Swan. As rivalry between the two dancers transforms into a
+                            twisted friendship, Nina's dark side begins to emerge
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- wrapper 2, situated underneath first wrapper-- same format as first wrapper-->
+            <div class="wrapper">
+                <div><a href="#open-modal3"</a><img src="perfect_blue.jpg" class="movie-poster" /></div>
+
+                <div id="open-modal3" class="modal-window">
+                    <div>
+                        <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                        <h1>Perfect Blue</h1>
+                        <div class="movie-summary">
+                            A pop singer gives up her career to become an actress, but she slowly goes insane when she starts being stalked by an obsessed fan and
+                            what seems to be a ghost of her past.
+                        </div>
+                    </div>
+                </div>
+
+                <div><a href="#open-modal4"</a><img src="fight_club.jpg" class="movie-poster" /></div>
+
+                <div id="open-modal4" class="modal-window">
+                    <div>
+                        <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                        <h1>Fight Club</h1>
+                        <div class="movie-summary">
+                            A depressed man (Edward Norton) suffering from insomnia meets a strange soap salesman named Tyler Durden (Brad Pitt) and soon finds himself living
+                            in his squalid house after his perfect apartment is destroyed. The two bored men form an underground club with strict rules and fight other men who are
+                            fed up with their mundane lives. Their perfect partnership frays when Marla (Helena Bonham Carter), a fellow support group crasher, attracts Tyler's attention.
+                        </div>
+                    </div>
+                </div>
+
+                <div><a href="#open-modal5"</a><img src="gone_girl.jpg" class="movie-poster" /></div>
+
+                <div id="open-modal5" class="modal-window">
+                    <div>
+                        <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                        <h1>Gone Girl</h1>
+                        <div class="movie-summary">
+                            In Carthage, Mo., former New York-based writer Nick Dunne (Ben Affleck) and his glamorous wife Amy (Rosamund Pike) present a portrait of a blissful marriage to the public.
+                            However, when Amy goes missing on the couple's fifth wedding anniversary, Nick becomes the prime suspect in her disappearance. The resulting police pressure and media frenzy
+                            cause the Dunnes' image of a happy union to crumble, leading to tantalizing questions about who Nick and Amy truly are.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- another wrapper wooo!!-->
+            <div class="wrapper">
+                <div><a href="#open-modal6"</a><img src="american_history_x.jpg" class="movie-poster" /></div>
+
+                <div id="open-modal6" class="modal-window">
+                    <div>
+                        <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                        <h1>American History X</h1>
+                        <div class="movie-summary">
+                            Living a life marked by violence and racism, neo-Nazi Derek Vinyard (Edward Norton) finally goes to prison after killing two black youths who tried to steal his car.
+                            Upon his release, Derek vows to change his ways; he hopes to prevent his younger brother, Danny (Edward Furlong), who idolizes Derek, from following in his footsteps.
+                            As he struggles with his own deeply ingrained prejudices and watches their mother grow sicker, Derek wonders if his family can overcome a lifetime of hate.
+                        </div>
+                    </div>
+                </div>
+
+                <div><a href="#open-modal7"</a><img src="trainspotting.jpg" class="movie-poster" /></div>
+
+                <div id="open-modal7" class="modal-window">
+                    <div>
+                        <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                        <h1>Trainspotting</h1>
+                        <div class="movie-summary">
+                            Heroin addict Mark Renton (Ewan McGregor) stumbles through bad ideas and sobriety attempts with his unreliable friends -- Sick Boy (Jonny Lee Miller), Begbie (Robert Carlyle),
+                            Spud (Ewen Bremner) and Tommy (Kevin McKidd). He also has an underage girlfriend, Diane (Kelly Macdonald), along for the ride. After cleaning up and moving from Edinburgh to London,
+                            Mark finds he can't escape the life he left behind when Begbie shows up at his front door on the lam, and a scheming Sick Boy follows.
+                        </div>
+                    </div>
+                </div>
+
+                <div><a href="#open-modal8"</a><img src="requiem_for_a_dream.jpg" class="movie-poster" /></div>
+
+                <div id="open-modal8" class="modal-window">
+                    <div>
+                        <a href="#modal-close" title="Close" class="modal-close">close &times;</a>
+                        <h1>Requiem for a Dream</h1>
+                        <div class="movie-summary">
+                            Imaginatively evoking the inner landscape of human beings longing to connect, to love and feel loved, the film is a parable of happiness
+                            gloriously found and tragically lost. "Requiem for a Dream" tells parallel stories that are linked by the relationship between the lonely, widowed Sara Goldfarb and
+                            her sweet but aimless son, Harry. The plump Sara, galvanized by the prospect of appearing on a TV game show, has started on a dangerous diet regimen to beautify herself
+                            for a national audience.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- copyright-->
+            <div class="footer">
+                <p>
+                    &copy;2021 Katya Incorporated
+                </p>
+            </div>
+        </div>
+
+    </body>
+</html>

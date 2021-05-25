@@ -1,0 +1,153 @@
+html {
+
+}
+/*
+    i already commented on these elements in index.css
+*/
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+#root-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    row-gap: 1%;
+}
+#name {
+    font-family: "Courier New";
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(157, 183, 242,.95);
+}
+
+#header-container {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(101, 101, 107,.95);
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Courier New";
+}
+.general-container {
+    width: 100%;
+    font-family: Dubai;
+    font-size: 1rem;
+    text-align: center;
+    color: #7990ab;
+}
+.title-container {
+    width: 100%;
+    font-family: monospace;
+    text-align: center;
+    color: #7990ab;
+    font-size: 40px;
+}
+
+
+
+    li a:hover {
+        background-color: rgba(39, 39, 41,.95);
+    }
+
+/*
+    container which holds the pictures
+*/
+
+.container {
+    position: relative;
+
+}
+
+/*
+    this wrapper groups images in rows, so i can decide how many images i want in each row. there is a gap between each image in this wrapper 
+*/
+.wrapper {
+    display: flex;
+    column-gap: 1%;
+    align-items: center;
+    width: 97%;
+}
+
+/*
+    styling for pictures on page 
+*/
+.picture {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius:10px;
+}
+
+/*
+    overlay styling/animation
+*/
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: auto;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+}
+
+/*
+    this is the overlay that appears when you hover over an image
+*/
+
+.container:hover .overlay {
+    opacity: 1;
+    width: 100%;
+    height:auto;
+}
+/*
+    this is the text you see when you hover over the image. only the two top corners are rounded
+*/
+.text {
+    color: white;
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+    background-color: #8899a6;
+    width:100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius:10px;
+}
+
+/*
+    footer
+*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    text-align: center;
+    font-family:monospace;
+}

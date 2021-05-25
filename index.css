@@ -1,0 +1,140 @@
+html {
+
+}
+/*
+    This is the body element. There is no width because that made my website scroll to the side for some reason 
+*/
+body {
+    height: 100vh;
+    background-color: #d3dbeb;
+}
+
+/*
+    this is the container that holds everything in the body; display is flex so i can align everything with flex boxes
+    there is a gap between every flex box (vertical direction) within the root-container
+*/
+#root-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    height: 100%;
+    width:100%
+    row-gap:1%;
+}
+/*
+    This is style for my the name in the header. the background isn't completely opaque 
+*/
+#name {
+    font-family: "Courier New";
+    font-size: 4rem;
+    padding: 0;
+    margin: 0;
+    background-color: rgba(157, 183, 242,.95);
+}
+
+/*
+    this is the header container which contains the name and navigation bar. position is sticky so it sticks to the top of the page as you scroll. z-index is 1 to make sure that it always stays on top of other elements
+    (this makes more sense in the movies page)
+*/
+#header-container {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+/*
+    this is the list used for the navigation bar at the top- it doesn't use bullet points and is slightly transparent
+*/
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(101, 101, 107,.95);
+}
+
+/*
+    list elements styling
+*/
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: "Courier New";
+}
+
+    li a:hover {
+        background-color: rgba(39, 39, 41,.95);
+    }
+/*
+    i use this for the bigger text 
+*/
+.title-container {
+    width: 100%;
+    font-family: monospace;
+    text-align: center;
+    color: #020c24;
+    font-size: 40px;
+}
+
+/*
+    this is just the background and container for the boxes of text. the width is only 60% to make it look like a strip going down the middle
+*/
+.text-container {
+    background-color: #edf0f5;
+    width: 60%;
+}
+
+/*
+    this is just style for the smaller text 
+*/
+
+.paragraph-container {
+    width: 100%;
+    font-family: monospace;
+    color: #091b45;
+    font-size: 30px;
+}
+
+
+/*
+    style for the images/gifs i use to divide the page
+    style allows for images to be resized and cropped to fit the specific 'banner' size i've set up
+*/
+
+.divider-image {
+ overflow: hidden;
+ border-radius: 20px;
+ flex-shrink: 0;
+ display: contents;
+}
+
+.divider-image > img {
+    display : block;
+    width: 60%;
+    height: 30%;
+    object-fit: cover;
+}
+
+
+
+/*
+    little copyright footer
+*/
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    font-family: monospace;
+    text-align: center;
+}
+

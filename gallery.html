@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Katya</title>
+        <link rel="stylesheet" href="gallery.css" />
+    </head>
+  
+    <body>
+        <div id="root-container">
+            <!-- this is the header and navigation list. this sits at the top of the page; currently, the 'gallery' page is active and therefore is the only one without a link-->
+            <div id="header-container">
+                <div>
+                    <p id="name">Katya</p>
+                </div>
+
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="movies.html">movies</a></li>
+                    <li><a class="active">gallery</a></li>
+                </ul>
+            </div>
+            <!-- large text-->
+            <p class="title-container">These are some pictures of my cats.</p>
+
+            <!-- wrapper contains 4 images in this case; 4 images for this row-->
+            <div class="wrapper">
+                <!-- within the container is the image and and text overlay (visible when hovering over image)-->
+                <div class="container">
+                    <img src="ge1.png" class="picture">
+                    <div class="overlay">
+                        <div class="text">This is a picture of Geneva. She's a spunky little cat.</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="ste1.png" class="picture">
+                    <div class="overlay">
+                        <div class="text">Stevert is a very anxious cat.</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="ge2.png" class="picture">
+                    <div class="overlay">
+                        <div class="text">Geneva is a little angel.</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="ste2.png" class="picture">
+                    <div class="overlay">
+                        <div class="text">Stevert is rude to me.</div>
+                    </div>
+                </div>
+            </div>
+
+            <p class="title-container">These are paintings from my favourite artist.</p>
+            <!-- this is another wrapper, right below the first one. it just follows the same format as the first.-->
+            <div class="wrapper">
+                <div class="container">
+                    <img src="painting1.jpg" class="picture">
+                    <div class="overlay">
+                        <div class="text">The artist's name is Zhiyong Jing.</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="painting2.jpg" class="picture">
+                    <div class="overlay">
+                        <div class="text">I like the way his paintings make me feel.</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="painting3.jpg" class="picture">
+                    <div class="overlay">
+                        <div class="text">I love his surrealist, eerie style.</div>
+                    </div>
+                </div>
+                <div class="container">
+                    <img src="painting4.jpg" class="picture">
+                    <div class="overlay">
+                        <div class="text">It almost looks as if all of his paintings are part of a series.</div>
+                    </div>
+                </div>
+            </div>
+            <!-- copyright-->
+            <div class="footer">
+                <p>
+                    &copy;2021 Katya Incorporated
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
