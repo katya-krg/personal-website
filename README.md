@@ -1,6 +1,6 @@
 # personal-website
-this is my personal website
-there are 3 pages in which you can navigate to
+this is my personal website;
+there are 3 pages in which you can navigate to;
 the navigation bar utilizes the list and link element
 
 index represents the home page; basic introduction
